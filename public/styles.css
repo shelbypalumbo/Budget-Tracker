@@ -4,6 +4,11 @@ body {
   background-color: rgb(216, 245, 225);
 }
 
+h1 { 
+    text-shadow: 2px 3px 3px black;
+    color:white;
+}
+
 button, input {
   font-size: 100%;
   font-family: Arial;
@@ -34,11 +39,10 @@ tr:nth-child(even) {
   background-color:white;
 }
 
-.total {
-  font-size: 150%;
-  text-decoration: underline;
-  background-color: rgb(120, 177, 118);
-  padding: 10px;
+.total { 
+  background-color: rgb(157, 228, 148); 
+  font-size: 130%;
+  padding: 5px;
 }
 
 .form {
