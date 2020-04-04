@@ -1,5 +1,5 @@
 {
-  "name": "Budget-Tracker",
+  "name": "budget-tracker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shelbypalumbo/Budget-Tracker"
+    "url": "git+http://github.com/shelbypalumbo/Budget-Tracker"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shelbypalumbo/Budget-Tracker/issues"
+    "url": "http://github.com/shelbypalumbo/Budget-Tracker/issues"
   },
-  "homepage": "https://github.com/shelbypalumbo/Budget-Tracker",
+  "homepage": "http://github.com/shelbypalumbo/Budget-Tracker",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
