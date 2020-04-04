@@ -1,6 +1,7 @@
 body {
   font-size: 120%;
   font-family: Arial;
+  background-color: rgb(224, 209, 243);
 }
 
 button, input {
@@ -30,11 +31,14 @@ tr:nth-child(even) {
   margin: 0 auto;
   max-width: 825px;
   text-align: center;
+  background-color:white;
 }
 
 .total {
   font-size: 150%;
   text-decoration: underline;
+  background-color: rgb(120, 177, 118);
+  padding: 10px;
 }
 
 .form {
@@ -48,4 +52,8 @@ tr:nth-child(even) {
   overflow: auto;
   width: 90%;
   margin: 0 auto;
+}
+
+#myChart {
+  background-color: rgb(245, 241, 248);
 }
