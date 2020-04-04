@@ -9,10 +9,7 @@ const app = express();
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/budget";
 
-mongoose.connect(MONGODB_URI, {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+mongoose.connect(MONGODB_URI);
 
 app.use(logger("dev"));
 
