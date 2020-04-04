@@ -1,0 +1,10 @@
+{
+  "name": "Budget Tracker",
+  "short_name": "Budget Tracker",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "An application for managing a users budget",
+  "background_color": "#01579b",
+  "theme_color": "#ffffff"
+}

@@ -5,7 +5,7 @@ const FILES_TO_CACHE = [
   "./src/db.js",
   "/styles.css",
   "./dist/bundle.js",
-  "./dist/manifest.08f84ee7cfb9720c93645e5bbaba4d22.json"
+  "./dist/manifest.json"
 ];
 
 const STATIC_CACHE = "static-cache-v1";
@@ -87,3 +87,4 @@ console.log(event.request)
     })
   );
 });
+
