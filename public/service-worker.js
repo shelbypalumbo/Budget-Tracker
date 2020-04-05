@@ -5,7 +5,9 @@ const FILES_TO_CACHE = [
   "./src/db.js",
   "/styles.css",
   "./dist/bundle.js",
-  "./dist/manifest.json"
+  "./dist/manifest.json",
+  "./images/lined_paper.png",
+  "./images/moneyTree.png"
 ];
 
 const STATIC_CACHE = "static-cache-v1";
