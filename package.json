@@ -6,7 +6,6 @@
   "node": "12.16.x",
   "scripts": {
     "webpack": "webpack --watch",
-    // "build": "npm run webpack",
     "build": "webpack",
     "heroku-postbuild": "echo Skip build on Heroku",
     "test": "echo \"Error: no test specified\" && exit 1",
