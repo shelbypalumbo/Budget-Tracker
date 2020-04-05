@@ -5,7 +5,7 @@ A budget tracking application available for online and offline use!
     APPLICATION CURRENTLY NOT DEPLOYED, DEPLOY ISSUES UNDER CONSTRUCTION
    
 <br>
-https://guarded-depths-15224.herokuapp.com/
+https://fast-ridge-93546.herokuapp.com/
 
 
 ## User Story
