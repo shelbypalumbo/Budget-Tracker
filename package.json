@@ -6,7 +6,7 @@
   "node": "12.16.x",
   "scripts": {
     "webpack": "webpack --watch",
-    "build": "npm run webpack",
+    "build": "webpack",
     "start": "node server.js"
   },
   "repository": {
