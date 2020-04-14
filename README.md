@@ -13,9 +13,27 @@ Users of the Budget Tracker have the ability to add funds, remove funds, and vie
 
 #### Main Interface
 ![Main View](./public/images/mainView.png)
+<hr>
 
 #### Add and Remove Funds
 ![Add View](./public/images/addView.png)
+<hr>
 
 #### View your overall funds data
 ![Chart View](./public/images/chart.png)
+<hr>
+
+## Technologies Used
+* Mongoose
+* MongoDB
+* Webpack
+* Express
+* Node.js
+* HTML
+* CSS
+* Javascript
+
+
+### Additional Styling Framework 
+* Bootstrap | https://getbootstrap.com/
+* Fontsawesome icons | https://fontawesome.com/icons?d=gallery&m=free
