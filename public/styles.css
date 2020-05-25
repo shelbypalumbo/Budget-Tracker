@@ -1,18 +1,18 @@
 body {
   font-size: 120%;
-  font-family: 'Questrial', sans-serif;
-  background-color: rgb(212, 245, 223);
+  font-family: "Questrial", sans-serif;
   background-image: url("./images/lined_paper.png");
 }
 
-h1 { 
-    text-shadow: 2px 3px 3px rgb(39, 38, 38);
-    color:white;
-    padding: 10px;
-    font-size: 45pt;
+h1 {
+  text-shadow: 2px 3px 3px rgb(39, 38, 38);
+  color: white;
+  padding: 10px;
+  font-size: 45pt;
 }
 
-button, input {
+button,
+input {
   font-size: 100%;
   font-family: Arial;
 }
@@ -21,14 +21,17 @@ table {
   width: 100%;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-
+th {
+  background-color: #6cc052;
+}
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #bbdab2;
 }
 
 .error {
@@ -39,15 +42,14 @@ tr:nth-child(even) {
   margin: 0 auto;
   max-width: 900px;
   text-align: center;
-  background-color:white;
+  background-color: white;
   box-shadow: 6px 8px 8px gray;
 }
 
-.total { 
+.total {
   background-image: url("./images/moneyTree.png");
   background-size: cover;
   background-image: no-repeat;
-  background-color: rgb(157, 228, 148); 
   font-size: 130%;
   padding: 45px;
 }
@@ -67,5 +69,5 @@ tr:nth-child(even) {
 }
 
 #myChart {
-  background-color: rgb(245, 241, 248);
+  background-color: rgb(243, 248, 241);
 }
