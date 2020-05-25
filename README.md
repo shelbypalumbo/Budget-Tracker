@@ -4,7 +4,7 @@ A budget tracking application available for online and offline use!
 
 https://fast-ridge-93546.herokuapp.com/
 
-## User Story
+# User Story
 
 As a person who likes to save money, I want the ability to track my money, so that I can find out where my unnecessary spending lies.
 
@@ -12,25 +12,25 @@ As a person who likes to save money, I want the ability to track my money, so th
 
 Users of the Budget Tracker have the ability to add funds, remove funds, and view all incoming and outgoing funds in chart form.
 
-#### Main Interface
+### Main Interface
 
 ![Main View](./public/images/mainView.png)
 
 <hr>
 
-#### Add and Remove Funds
+### Add and Remove Funds
 
 ![Add View](./public/images/addView.png)
 
 <hr>
 
-#### View your overall funds data
+### View your overall funds data
 
 ![Chart View](./public/images/chart.png)
 
 <hr>
 
-## Technologies Used
+#### Technologies Used
 
 - Mongoose
 - MongoDB
@@ -41,7 +41,7 @@ Users of the Budget Tracker have the ability to add funds, remove funds, and vie
 - CSS
 - Javascript
 
-### Additional Styling Framework
+#### Additional Styling Framework
 
 - Bootstrap | https://getbootstrap.com/
 - Fontsawesome icons | https://fontawesome.com/icons?d=gallery&m=free
