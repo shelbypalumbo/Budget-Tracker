@@ -18,13 +18,13 @@ Users of the Budget Tracker have the ability to add funds, remove funds, and vie
 
 <hr>
 
-### Add and Remove Funds
+### Add and remove funds
 
 ![Add View](./public/images/addView.png)
 
 <hr>
 
-### View your overall funds data
+### View transactions chart
 
 ![Chart View](./public/images/chart.png)
 
@@ -34,6 +34,7 @@ Users of the Budget Tracker have the ability to add funds, remove funds, and vie
 
 - Mongoose
 - MongoDB
+- IndexedDB
 - Webpack
 - Express
 - Node.js
