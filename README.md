@@ -10,7 +10,7 @@ As a person who likes to save money, I want the ability to track my funds, so th
 
 ## Usage
 
-Users of the Budget Tracker have the ability to add funds, remove funds, and view all incoming and outgoing funds in chart form.
+Users of the Budget Tracker have the ability to add funds, remove funds, and view all incoming and outgoing funds in chart form. Available for online and offline use, storing offline post request to indexedDB in the browser.
 
 <hr>
 

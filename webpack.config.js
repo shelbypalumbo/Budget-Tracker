@@ -1,15 +1,18 @@
 const WebpackPwaManifest = require("webpack-pwa-manifest");
-const path = require("path");
 
+//Webpack configuration object
 const config = {
-  entry: "./public/src/index.js",
+  entry: "./public/src/index.js", // entry: What is the main js file that will list the dependencies being used.
   output: {
-    path: __dirname + "/public/dist",
-    filename: "bundle.js"
+    //output: Where do you want the bundled js file that is being created to live. Must take in an absolute path
+    path: __dirname + "/public/dist", //The directory where the new bundled file goes.
+    filename: "bundle.js" //The new bundled file that is created.
   },
-  mode: "development",
+  mode: "development", // Development mode: 'run webpack' will build the bundle.js file in the dist directory.
+  //Setting Production mode will then minify the bundle.js file
   plugins: [
     new WebpackPwaManifest({
+      // Genertates the manifest.json file
       name: "Budget Tracker",
       short_name: "Budget Tracker",
       description: "An application for managing a users budget",

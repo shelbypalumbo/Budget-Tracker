@@ -1,15 +1,16 @@
 const express = require("express");
+// Morgan is a http request middleware logger for Node.js
 const logger = require("morgan");
-//Morgan is a middleware logger that
 const mongoose = require("mongoose");
 const compression = require("compression");
-//The middleware will attempt to compress response bodies for all
-//request that traverse through the middleware, based on the given options.
+// The middleware will attempt to compress response bodies for all
+// requests that traverse through the middleware, based on the given options.
 
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 
+// Morgan allows us to easily log requests, errors, and more to the console.
 app.use(logger("dev"));
 
 app.use(compression());
@@ -25,7 +26,7 @@ mongoose.connect(MONGODB_URI, {
   useFindAndModify: false
 });
 
-// routes
+// Routes
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
