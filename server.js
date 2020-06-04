@@ -1,7 +1,10 @@
 const express = require("express");
 const logger = require("morgan");
+//Morgan is a middleware logger that
 const mongoose = require("mongoose");
 const compression = require("compression");
+//The middleware will attempt to compress response bodies for all
+//request that traverse through the middleware, based on the given options.
 
 const PORT = process.env.PORT || 3000;
 
