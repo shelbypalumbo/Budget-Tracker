@@ -2,7 +2,7 @@
 
 A budget tracking application available for online and offline use!
 
-https://fast-ridge-93546.herokuapp.com/
+Deployed Application: https://fast-ridge-93546.herokuapp.com/
 
 ## User Story
 
