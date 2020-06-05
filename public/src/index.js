@@ -31,39 +31,41 @@ function populateTable() {
   transactions.forEach(transaction => {
     // create and populate a table row
     let tr = document.createElement("tr");
+    // Table columns on each table row
     tr.innerHTML = `
       <td>${transaction.name}</td>
       <td>${transaction.value}</td>
     `;
-
+    // Append the table row to the table
     tbody.appendChild(tr);
   });
 }
 
 function populateChart() {
-  // copy array and reverse it
+  // Copy transactions array and reverse it
   let reversed = transactions.slice().reverse();
   let sum = 0;
 
-  // create date labels for chart
+  // Create date labels for chart
   let labels = reversed.map(t => {
     let date = new Date(t.date);
     return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
   });
 
-  // create incremental values for chart
+  // Create incremental values for chart
   let data = reversed.map(t => {
     sum += parseInt(t.value);
     return sum;
   });
 
-  // remove old chart if it exists
+  // Remove old chart if it exists
   if (myChart) {
     myChart.destroy();
   }
 
   let ctx = document.getElementById("myChart").getContext("2d");
 
+  // Chart creation
   myChart = new Chart(ctx, {
     type: "line",
     data: {
@@ -80,40 +82,44 @@ function populateChart() {
   });
 }
 
+//============================================================================
 function sendTransaction(isAdding) {
+  // Transaction Name
   let nameEl = document.querySelector("#t-name");
+  // Transaction Amount
   let amountEl = document.querySelector("#t-amount");
+  // Error Element
   let errorEl = document.querySelector(".form .error");
 
-  // validate form
+  // Validate form
   if (nameEl.value === "" || amountEl.value === "") {
-    errorEl.textContent = "Missing Information";
+    errorEl.textContent = "Missing Transaction Information";
     return;
   } else {
     errorEl.textContent = "";
   }
 
-  // create record
+  // Create transaction record
   let transaction = {
     name: nameEl.value,
     value: amountEl.value,
-    date: new Date().toISOString()
+    date: new Date().toISOString() //toISOString() method returns a string in simplified extended ISO format
   };
 
-  // if subtracting funds, convert amount to negative number
+  // If subtracting funds (not adding), convert amount to negative number
   if (!isAdding) {
     transaction.value *= -1;
   }
 
-  // add to beginning of current array of data
+  // Add transaction to the beginning of the current array of data
   transactions.unshift(transaction);
 
-  // re-run logic to populate ui with new record
+  // Re-run logic to populate ui with new record
   populateChart();
   populateTable();
   populateTotal();
 
-  // also send to server
+  // Also send post request to server
   fetch("/api/transaction", {
     method: "POST",
     body: JSON.stringify(transaction),
@@ -135,11 +141,11 @@ function sendTransaction(isAdding) {
       }
     })
     .catch(err => {
-      // fetch failed, so save in indexed db
+      // Fetch failed, so save in indexed db
       console.log("Transaction", transaction);
       saveRecord(transaction);
 
-      // clear form
+      // Clear form
       nameEl.value = "";
       amountEl.value = "";
     });
